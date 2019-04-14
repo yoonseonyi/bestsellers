@@ -34,9 +34,8 @@ fetch('https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-ficti
     });
   }
   
-  
   function updateCover(id, isbn) {
-    fetch('https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn + "&key=AIzaSyAcotR8YZ-Zsd6dcREUBhkUA_NE3UC5AIY", {
+    fetch('https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn + "&key=AIzaSyAAcEyYLOzwbsLzogu1HjcT7VFNDbnFdos", {
       method: 'get'
     })
     .then(response => { return response.json(); })
@@ -64,4 +63,3 @@ fetch('https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-ficti
         $('#nyt-logo').css({'height':'80'})
       }
   });
-  
